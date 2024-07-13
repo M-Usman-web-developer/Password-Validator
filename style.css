@@ -1,0 +1,96 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, button, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #9ec7f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    color: #495057;
+}
+
+.container {
+    background: #33a4e1;
+    padding: 7rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* H1 styling inside the container */
+h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+    color: #fefeff;
+}
+
+/* Button styling */
+.btn {
+    background-color: #fefeff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e1e1e1e1;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Message styling */
+.msg {
+    font-size: 18px;
+    color: #333;
+    margin-top: 1rem;
+    color: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
